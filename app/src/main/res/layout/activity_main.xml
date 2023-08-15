@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:menu="@menu/botton_nav_menu">
 
     <FrameLayout
         android:id="@+id/fragContainer"
@@ -22,7 +23,10 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@color/purple_500"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botton_nav_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
