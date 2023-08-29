@@ -20,6 +20,9 @@ public class GalleryPagingSource extends ListenableFuturePagingSource <Integer,I
     GalleryRepository galleryRepository;
     Integer initialLoadSize= 0;
 
+    // e recebe como parâmetro uma instância de
+    //GalleryRepository, que será usada para consultar os dados e montar as páginas
+    //de dados.
     public GalleryPagingSource(GalleryRepository galleryRepository) {
         this.galleryRepository = galleryRepository;
     }
