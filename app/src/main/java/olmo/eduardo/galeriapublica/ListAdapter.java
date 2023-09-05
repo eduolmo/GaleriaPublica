@@ -12,7 +12,6 @@ import androidx.paging.PagingDataAdapter;
 import androidx.recyclerview.widget.DiffUtil;
 
 import java.text.SimpleDateFormat;
-import java.util.List;
 
 public class ListAdapter extends PagingDataAdapter<ImageData,MyViewHolder> {
 
@@ -32,7 +31,7 @@ public class ListAdapter extends PagingDataAdapter<ImageData,MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         ImageData imageData = getItem(position);
 
-        TextView tvName =  holder.itemView.findViewById(R.id.tvName);
+        TextView tvName =  holder.itemView.findViewById(R.id.imThumb);
         tvName.setText(imageData.fileName);
 
         TextView tvDate = holder.itemView.findViewById(R.id.tvDate);

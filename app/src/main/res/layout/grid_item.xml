@@ -6,9 +6,9 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/tvName"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/imThumb"
+        android:layout_width="@dimen/im_width"
+        android:layout_height="@dimen/im_height"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
